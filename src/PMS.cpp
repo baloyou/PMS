@@ -1,11 +1,11 @@
 #include "Arduino.h"
 #include "PMS.h"
 
-PMS::PMS(Stream& stream)
+PMS::PMS(){}
+void PMS::setUART(Stream& stream)
 {
   this->_stream = &stream;
 }
-
 // Standby mode. For low power consumption and prolong the life of the sensor.
 void PMS::sleep()
 {

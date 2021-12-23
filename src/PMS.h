@@ -24,7 +24,8 @@ public:
     uint16_t PM_AE_UG_10_0;
   };
 
-  PMS(Stream&);
+  PMS();
+  void setUART(Stream&);
   void sleep();
   void wakeUp();
   void activeMode();
